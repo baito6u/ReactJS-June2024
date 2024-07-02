@@ -3,12 +3,12 @@ import {db} from "../config/firebase"
 
 export const useAddTransaction = () => {
     const transactionCollectionRef = collection(db, "transactions")
-    const addTransaction = async () => {
+    const addTransaction = async ({description, trasactionAmount, trasactionType}) => {
         await addDoc(transactionCollectionRef, {
-            userId:"",
-            description: "",
-            trasactionAmount: 0,    
-            trasactionType: "",
+            userId: "",
+            description,
+            trasactionAmount,    
+            trasactionType,
             createdAt: serverTimestamp(),  
         });
     };

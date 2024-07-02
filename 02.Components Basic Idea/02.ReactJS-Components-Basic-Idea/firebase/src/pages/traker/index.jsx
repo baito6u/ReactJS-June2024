@@ -1,4 +1,8 @@
+import { useAddTransaction } from "../../hooks/useAddTransaction";
+
 export const Tracker = () => {
+  const { addTransaction } = useAddTransaction();
+
   return (
     <>
       <div className="tracker">

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useAddTransaction } from "../../hooks/useAddTransaction";
 import { useGetTransactions } from "../../hooks/useGetTransactions";
 
+import "./styles.css"
+
 export const Tracker = () => {
   const { addTransaction } = useAddTransaction();
   const { transactions } = useGetTransactions();

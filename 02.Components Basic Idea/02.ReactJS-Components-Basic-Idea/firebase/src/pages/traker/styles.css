@@ -1,4 +1,4 @@
-.expense-tracker {
+.tracker {
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -7,10 +7,10 @@
     color: #023047;
   }
   
-  .expense-tracker h1 {
+  .tracker h1 {
     font-size: 40px;
   }
-  .expense-tracker button {
+  .tracker button {
     margin-left: 10px;
   }
   .profile {

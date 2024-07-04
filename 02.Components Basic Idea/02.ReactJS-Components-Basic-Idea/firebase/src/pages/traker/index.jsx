@@ -74,11 +74,11 @@ export const Tracker = () => {
         <h3>Transactions</h3>
         <ul>
           {transactions.map((transaction) => {
-            const { description, trasactionAmount, trasactionType } =
+            const {createdAt, description, trasactionAmount, trasactionType } =
               transaction;
 
             return (
-              <li>
+              <li key={createdAt}>
                 <h4>{description}</h4>
                 <p>${trasactionAmount} - <label style={{color: trasactionType == "expense" ? "red" : "green"}}>{trasactionType}</label></p>
               </li>
